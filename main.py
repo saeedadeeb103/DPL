@@ -113,7 +113,7 @@ class Model(pl.LightningModule):
 
 if __name__ == "__main__":
   model = Model(
-        num_classes=2,
+        num_classes=36,
         model=resnet18,
         train_dir="dataset/train",
         val_dir="dataset/val",
@@ -122,3 +122,4 @@ if __name__ == "__main__":
         batch_size=16,
         transfer=True,
     )
+  
